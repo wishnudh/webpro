@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="nav-head">	
+			<ul class="main-nav">
+				<li><img src="css/logo.jpg" style="margin-top:5px;" height="30"> </a></li>
+				<li><a class="main" href="#main">Main</a></li>
+				<li><a class="aboutme" href="#aboutme">About Me</a></li>
+				<li><a class="skill" href="#myskill">Skill</a></li>
+				<li><a class="contact" href="#contact">Contact</a></li>
+			</ul>	
+		</div>
+			<div class="ProfileAvatar">
+    			<a class="ProfileAvatar-container" href="foto/pptwit.jpg" data-url="foto/pptwit.jpg" data-original-title="Wishnu">
+        		<img class="ProfileAvatar-image " src="foto/pptwit.jpg" alt="Wishnu">
+    			</a>
+			</div>
+			<br></br>
+			<h2 class="nama-avatar">Wishnu Dwi Herlambang</h2><br></br>
+			<hr class="hr3">
+			<p class="job-avatar">Web Designer</p>
+	</header>
+	<div class="judul" id="aboutme">
+            <h1>About Me</h1>
+            <p>I am enthusiast to be a part of your team, ready to make this project more mesmerizing.<br></br>
+				I am fully commit with what i wanted to be at lokatara fest, an energic person that love music a lot.<br></br>
+				A team player who understands the dynamics of the team’s members. 
+				Doing my work with joy and serious on the same time, <br></br>
+				to make the others more comfortable working with me without neglect the job given.</p>
+            
+            <div class="quote-judul">
+                <a href="#" class="quote-button">Show more</a>
+                <blockquote>“Kejarlah Fiksi Duniawi-mu Dengan Bekerja -Wishnu”</blockquote>
+            </div>
+        </div>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            (function(){
+                
+                var quoteButton = $('.quote-button'),
+                    blockquote = $('blockquote');
+                
+                quoteButton.on('click', function(e) {
+                    e.preventDefault();
+                    var quoteButtonText = quoteButton.text();
+                    
+                    blockquote.slideToggle(200, function(){
+                        quoteButtonText == "Show more" ? quoteButton.text("Show less") : quoteButton.text("Show more");
+                    });
+    
+                });
+                
+            })();
+            
+        </script>
+
+        <div class="content-section">
+            <h1 id="myskill">My Skills</h1>
+	     	<p>If you were wondering, what could this kid give to our company? or what can this kid do? here is my skill chart about what things that i can do!</p>
+	     	<br/>
+	     	<div class="graph-cont"></div>
+	        <div class="bar bar1">Graphic Design 60%</div>
+	        <div class="bar bar2">Mobile Developer 50%</div>
+	        <div class="bar bar3">Web Developer 70%</div>
+        </div>
+		
+
+		<div class="video-section">
+			<video id="video-elem" preload="auto" autoplay="true" loop="loop" muted="muted" poster="videoGIF.gif"> 
+				<source src="video.mp4" type="video/mp4">
+				Video not supported
+			</video>
+            
+            <div class="video-overlay">
+                <h1>Pemanis</h1>
+            </div>
+		</div>
+        
+        <div class="content-section" id="contact">
+            <h1>Contact Me!</h1>
+            <br>
+            <p>
+            <div class="container-form">
+			  <form action="action_page.php">
+
+			    <label for="fname">First Name</label>
+			    <input type="text" id="fname" name="firstname" placeholder="first name">
+
+			    <label for="lname">Last Name</label>
+			    <input type="text" id="lname" name="lastname" placeholder="last name">
+
+			    <label for="email-form">Email</label>
+			    <input type="text" id="email-form" name="Email" placeholder="ex : wishnudh@gmail.com">
+
+			    <label for="kepentingan">Kepentingan</label>
+			    <select id="kepentingan" name="kepentingan">
+			      <option value="joboffer">Job Offer</option>
+			      <option value="collaboration">Collaboration</option>
+			      <option value="justask">Just Asking</option>
+			    </select>
+
+			    <label for="subject">Isi Masukan</label>
+			    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+			    <input type="submit" value="Submit">
+
+			  </form>
+			</div></p>
+			<br><br><br>
+			<ol>
+				<li><a class="icon-facebook social-button color" href="http://facebook.com/wishnudh"></a></li>
+				<li><a class="icon-twitter social-button color" href="http://twitter.com/wishnudh"></a></li>
+				<li><a class="icon-instagram social-button color" href="http://instagram.com/wishnudh"></a></li>
+		        <li><a class="icon-youtube social-button color" href="https://www.youtube.com/channel/UCVa_FFDVkV1J7qMvXYAYr7Q?view_as=subscriber"></a></li>
+		        <li><a class="icon-googleplus social-button color" href="http://google.com/plus/wishnudh"></a></li>
+		        <li><a class="icon-pinterest social-button color" href="http://pinterest.com/wishnudh"></a></li>
+		        <li><a class="icon-skype social-button color" href="http://skype.com/wishnudh"></a></li>
+		        <li><a class="icon-github social-button color" href="http://github.com/wishnudh"></a></li>
+			</ol>
+		</div>
+		</div>
+</script>
+</body>
+</html>
